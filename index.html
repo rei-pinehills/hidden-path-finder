@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hidden Path Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <h1>🔍 Hidden Path Finder</h1>
+        <p class="subtitle">Discover hidden paths on web servers</p>
+
+        <div id="input-area">
+            <input type="text" id="url-input" placeholder="Enter URL (e.g. https://example.com)">
+            <button onclick="scan()">Scan</button>
+        </div>
+
+        <div id="progress" class="hidden">
+            <p id="progress-text">Scanning...</p>
+            <div id="progress-bar">
+                <div id="progress-fill"></div>
+            </div>
+        </div>
+
+        <div id="results" class="hidden">
+            <div id="summary"></div>
+            <div id="result-list"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
